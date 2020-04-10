@@ -53,7 +53,6 @@ class ExerciseScreen extends React.Component {
       };
 
       fetchData = () => {
-            // TODO: LEFT HERE
             const { filteredExercises } = this.props.route.params;
             const rawExerciseList = filteredExercises.map((ex, index) => {
                   return { title: ex.title, duration: ex.duration * 60, id: index + 1 };
