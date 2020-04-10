@@ -122,10 +122,10 @@ class ExerciseScreen extends React.Component {
                               <Text style={styles.durationtext}>{formatTime(this.state.timer)}</Text>
                         </View>
                         <Text style={styles.playingtext}>Now Playing</Text>
-                        {this.state.currentPlayingId ? (
+                        {this.state.currentPlayingId !== 404 ? (
                               <Text style={styles.audiotext}>Music {this.state.currentPlayingId.toString()}</Text>
                         ) : (
-                              <Text>Nothing</Text>
+                              <Text style={styles.audiotext}>Nothing</Text>
                         )}
                   </View>
             );
