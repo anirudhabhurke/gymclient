@@ -134,7 +134,7 @@ class ExerciseScreen extends React.Component {
                         <View style={styles.container}>
                               <Image source={Images.winner} style={styles.winnerImage}></Image>
                               <Text style={styles.doneText}>Horray...</Text>
-                              <Text style={styles.doneText}>you are yone for today</Text>
+                              <Text style={styles.doneText}>you are done for today</Text>
                               <Button
                                     title={'BACK HOME'}
                                     style={styles.homeButton}
